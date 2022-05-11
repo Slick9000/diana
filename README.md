@@ -5,8 +5,6 @@ library of python functions implemented in lua!
 ## usage
 download diana.lua and import it to where your application is
 
-<br/>
-
 ## functions
 ### **input function**
 ```lua
@@ -29,11 +27,37 @@ Input a number
 <br/>
 
 ### **range function**
+#### example without increment value
+```lua
+local d = require('diana')
+
+for i in d.range(1, 5) do  -- 1 is initial value, 5 is final value
+
+  print(i)
+  
+end
+```
+
+Output:
+
+1
+
+2
+
+3
+
+4
+
+5
+
+#### example with increment value
 ```lua
 local d = require('diana')
 
 for i in d.range(2, 20, 4) do -- 2 is initial value, 20 is final value, 4 is increment/step value
+
   print(i)
+  
 end
 ```
 
@@ -182,8 +206,6 @@ of
 split
 
 string
-
-<br/>
 
 #### example with separator
 ```lua
