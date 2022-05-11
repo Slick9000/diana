@@ -102,6 +102,55 @@ Terry Red
 
 <br/>
 
+### **splitstr function**
+#### example without separator
+```lua
+local d = require('diana')
+
+ans = d.splitstr("example of split string")
+
+for _, s in ipairs(ans) do -- to display nested tables you need nested loops
+  
+  print(s)
+
+end
+```
+
+Output:
+
+example
+
+of
+
+split
+
+string
+
+#### example with separator
+```lua
+local d = require('diana')
+
+ans = d.splitstr("example,of,split,string", ",") -- split by comma
+
+for _, s in ipairs(ans) do -- to display nested tables you need nested loops
+  
+  print(s)
+
+end
+```
+
+Output:
+
+example
+
+ of
+
+ split
+
+ string
+
+<br/>
+
 ### **question function** (demonstrated by simple bank program)
 this bank program also demonstrates how **all** of the functions can be utilized from diana.
 ```lua
@@ -180,52 +229,3 @@ new balance is: 19
 **(if option is 4)**
 
 thank you for using our service!
-
-<br/>
-
-### **split function**
-#### example without separator
-```lua
-local d = require('diana')
-
-ans = d.split("example of split string")
-
-for _, s in ipairs(ans) do -- to display nested tables you need nested loops
-  
-  print(s)
-
-end
-```
-
-Output:
-
-example
-
-of
-
-split
-
-string
-
-#### example with separator
-```lua
-local d = require('diana')
-
-ans = d.split("example,of,split,string", ",") -- split by comma
-
-for _, s in ipairs(ans) do -- to display nested tables you need nested loops
-  
-  print(s)
-
-end
-```
-
-Output:
-
-example
-
- of
-
- split
-
- string
