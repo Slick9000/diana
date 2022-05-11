@@ -93,12 +93,6 @@ if option == "1" then
 
 end
 
-if option == "1" then
-
-  print(balance)
-
-end
-
 if option == "2" then
 
   withdrawal = d.input("input amount to deduct from account\n: ")
