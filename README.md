@@ -160,6 +160,7 @@ thank you for using our service!
 <br/>
 
 ### **split function**
+#### example without separator
 ```lua
 local d = require('diana')
 
@@ -181,3 +182,28 @@ of
 split
 
 string
+
+<br/>
+
+#### example with separator
+```lua
+local d = require('diana')
+
+ans = d.split("example,of,split,string", ",") -- split by comma
+
+for _, s in ipairs(ans) do -- to display nested tables you need nested loops
+  
+  print(s)
+
+end
+```
+
+Output:
+
+example
+
+ of
+
+ split
+
+ string
