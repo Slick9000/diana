@@ -13,6 +13,7 @@ local diana = {}
 function diana.input(prompt)
 
   io.write(prompt)
+     
   io.flush()
 
   input = io.read()
@@ -24,17 +25,21 @@ end
 function diana.range(a, b, step)
 
   if not b then
+          
     b = a
+          
     a = 1
 
   end
 
   step = step or 1
+     
   local f = step > 0 and
 
     function(_, previousvalue)
 
       local nextvalue = previousvalue + step
+          
       if nextvalue <= b then
 
         return nextvalue
@@ -42,11 +47,13 @@ function diana.range(a, b, step)
       end
 
     end or
+     
     step < 0 and
 
     function(_, previousvalue)
 
       local nextvalue = previousvalue + step
+          
       if nextvalue >= b then
 
         return previousvalue
@@ -65,22 +72,17 @@ function diana.range(a, b, step)
 
 end
 
-function diana.joinstr(delim, list)
-
-  if #list then
-    return ""
-
-  end
-
-  local str = list[1]
-
-  for i = 2, len do
-    str = str .. delim .. list[i]
-
-  end
-
-  return str
-
+function diana.joinstr(strlist)
+     
+    local t = { }
+     
+    for k,v in ipairs(strlist) do
+          
+        t[#t+1] = tostring(v)
+          
+    end
+     
+    return table.concat(t," ")
 end
 
 --question function, taken from https://github.com/superwhiskers/question
@@ -90,6 +92,7 @@ function diana.question(prompt, valid)
   while true do
 
     print(prompt)
+          
     if #valid ~= 0 then
 
       io.write(string.format('(%s): ', table.concat(valid, ', ')))
@@ -99,6 +102,7 @@ function diana.question(prompt, valid)
       io.write(': ')
 
     end
+          
     io.flush()
 
     input = io.read()
