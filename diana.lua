@@ -83,6 +83,27 @@ function diana.joinstr(strlist)
     end
      
     return table.concat(t," ")
+     
+end
+
+function diana.splitstr(inputstr, sep)
+     
+   if sep == nil then
+    
+      sep = "%s"
+    
+   end
+  
+   local t={}
+  
+   for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+    
+      table.insert(t, str)
+    
+   end
+  
+   return t
+  
 end
 
 --question function, taken from https://github.com/superwhiskers/question
@@ -127,26 +148,6 @@ function diana.question(prompt, valid)
 
   end
 
-end
-
-function diana.split(inputstr, sep)
-     
-   if sep == nil then
-    
-      sep = "%s"
-    
-   end
-  
-   local t={}
-  
-   for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-    
-      table.insert(t, str)
-    
-   end
-  
-   return t
-  
 end
 
 return diana
