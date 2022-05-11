@@ -156,3 +156,28 @@ new balance is: 19
 **(if option is 4)**
 
 thank you for using our service!
+
+<br/>
+
+### **split function**
+```lua
+local d = require('diana')
+
+ans = d.split("example of split string")
+
+for _, s in ipairs(ans) do -- to display nested tables you need nested loops
+  
+  print(s)
+
+end
+```
+
+Output:
+
+example
+
+of
+
+split
+
+string
