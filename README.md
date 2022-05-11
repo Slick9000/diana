@@ -1,5 +1,5 @@
 # diana
-functions similar to python, but in lua!
+library of python functions implemented in lua!
 
 
 ## usage
