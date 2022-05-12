@@ -94,6 +94,7 @@ Output:
 Enter first name
 
 : Terry
+
 Enter last name
 
 : Red
