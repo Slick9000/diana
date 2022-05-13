@@ -1,9 +1,6 @@
 # diana
 library of python functions implemented in lua!
 
-i created natsuka mainly out of fun (and boredom)
-
-
 ## usage
 download diana.lua and import it to where your application is
 
