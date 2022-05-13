@@ -188,7 +188,7 @@ end
 
 if option == "4" then
 
-  print("thank you for usage our service!")
+  print("thank you for using our service!")
   
 end
 ```
