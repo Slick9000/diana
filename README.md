@@ -151,14 +151,14 @@ example
 
 <br/>
 
-### **question function** (demonstrated by simple bank program)
+### **switch function** (demonstrated by simple bank program)
 this bank program also demonstrates how **all** of the functions can be utilized from diana.
 ```lua
 local d = require('diana')
 
 local balance = 10
 
-local option = d.question("1 - Check Balance\n2 - Withdraw Cash\n3 - Deposit Cash\n4 - Exit", {"1", "2", "3", "4"})
+local option = d.switch("1 - Check Balance\n2 - Withdraw Cash\n3 - Deposit Cash\n4 - Exit", {"1", "2", "3", "4"})
 
 if option == "1" then
 
