@@ -106,9 +106,9 @@ function diana.splitstr(inputstr, sep)
   
 end
 
---question function, taken from https://github.com/superwhiskers/question
+--switch function, taken from https://github.com/superwhiskers/question
 
-function diana.question(prompt, valid)
+function diana.switch(prompt, valid)
 
   while true do
 
