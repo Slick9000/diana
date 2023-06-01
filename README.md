@@ -23,8 +23,6 @@ Input a number
 
 2
 
-<br/>
-
 ### **range function**
 #### example without increment value
 ```lua
@@ -72,8 +70,6 @@ Output:
 
 18
 
-<br/>
-
 ### **joinstr function** (as well as input function)
 ```lua
 local d = require('diana')
@@ -99,8 +95,6 @@ Enter last name
 : Red
 
 Terry Red
-
-<br/>
 
 ### **splitstr function**
 #### example without separator
@@ -148,8 +142,6 @@ example
  split
 
  string
-
-<br/>
 
 ### **question function** (demonstrated by simple bank program)
 this bank program also demonstrates how **all** of the functions can be utilized from diana.
@@ -202,8 +194,6 @@ Output:
 3 - Deposit Cash
 
 4 - Exit
-
-<br/>
 
 **(if option is 1)**
 
